@@ -1,0 +1,17 @@
+{
+  "name": "teneo-ws-proxy",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.1",
+    "@types/ws": "^8.5.13",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "https-proxy-agent": "^7.0.5",
+    "ws": "^8.18.0"
+  }
+}
