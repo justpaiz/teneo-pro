@@ -33,6 +33,14 @@ export interface ProxyConfig {
 /**
  * Interval
  */
-export const INTERVAL = 1000;
+export const INTERVAL = 10000;
 export const MAX_PORT = 65535;
 export const MIN_PORT = 1;
+
+/**
+ * WebSocket message format
+ */
+export type WebSocketMessage = {
+    type: string;
+    [key: string]: unknown;
+};
