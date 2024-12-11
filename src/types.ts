@@ -8,26 +8,26 @@ export const WSS_ENDPOINT_VERSION = 'v0.2';
  * State of the WebSocket connection
  */
 export enum WebSocketConnectionState {
-    CONNECTED = 'CONNECTED',
-    CONNECTING = 'CONNECTING',
-    DISCONNECTED = 'DISCONNECTED',
+	CONNECTED = 'CONNECTED',
+	CONNECTING = 'CONNECTING',
+	DISCONNECTED = 'DISCONNECTED',
 }
 
 /**
  * Authentication configuration for proxy
  */
 export interface ProxyAuth {
-    username: string;
-    password: string;
+	username: string;
+	password: string;
 }
 
 /**
  * Proxy server configuration
  */
 export interface ProxyConfig {
-    hostname: string;
-    port: number; // Valid port range: 0-65535
-    auth?: ProxyAuth;
+	hostname: string;
+	port: number; // Valid port range: 0-65535
+	auth?: ProxyAuth;
 }
 
 /**
@@ -41,6 +41,6 @@ export const MIN_PORT = 1;
  * WebSocket message format
  */
 export type WebSocketMessage = {
-    type: string;
-    [key: string]: unknown;
+	type: string;
+	[key: string]: unknown;
 };
